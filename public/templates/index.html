@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="databaseApp">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=utf8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>WebPage</title>
+</head>
+<body>
+<div id="conteiner">
+    <header>
+        <div class="headerBlock">
+            <div class="enterBlock">
+                <a href="#/login" class="a">Login</a>
+                <span class="slash">/</span>
+                <a href="#/register" class="a">Register</a>
+            </div>
+        </div>
+        <div class="headerBlockSecond">
+            <div class="brandBlock">
+                <a class="brand a" href="#/">database of employees</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <ng-view></ng-view>
+
+    </main>
+    <div class="clear"></div>
+    <footer>
+
+        <div class="footerBlock">
+            <div class="footerContent">
+                <ul>
+                    <li>
+                        <a href="#">Лицензия</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/././js/moduls/modul.js"></script>
+<script src="/././././js/controllers/staffListCtrl.js"></script>
+<script src="/././././js/controllers/loginCtrl.js"></script>
+<script src="/././././js/controllers/registerCtrl.js"></script>
+<script src="/././././js/controllers/tabelCtrl.js"></script>
+<script src="/././././js/factory/Factory.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "port":3000,
+  "mongoose": {
+    "url": "mongodb://localhost/myapp",
+    "options": {
+      "server": {
+        "socketOptions": {
+          "keepAlive": "1"
+
+        }
+      }
+    }
+  },
+  "session":{
+    "secret":"mySecretKey",
+    "key":"sid",
+    "cookie":{
+      "path":"/",
+      "httpOnly":true,
+      "maxAge":null
+    }
+  }
+
+}
